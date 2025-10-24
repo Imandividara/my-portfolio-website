@@ -9,10 +9,12 @@ import { SiSpringboot, SiMongodb, SiPostgresql, SiMysql } from "react-icons/si";
 
 // ============ DATA ============
 const projects = [
-  { title: "ConstruxFlow", desc: "Supply Chain and Inventory Management System for procurement, supplier management, inventory tracking, and payment workflows. Achieved 25-30% gain in system responsiveness.", tags: ["React", "Spring Boot", "PostgreSQL", "REST APIs", "JPA"], img: "/2.jpg", github: "https://github.com/Imandividara/ConstruxFlow", live: "https://construxflow-demo.netlify.app", date: "May – Oct 2025", category: "Full-Stack" },
-  { title: "FutureFinder", desc: "Higher Education and Career Guidance Platform connecting students, institutions, and employers with Z-score analytics.", tags: ["PHP", "JavaScript", "HTML", "CSS", "MySQL"], img: "/Frame 3.png", github: "https://github.com/Imandividara/FutureFinder", live: "https://futurefinder-demo.netlify.app", date: "May 2024 – Apr 2025", category: "Full-Stack" },
-  { title: "SIMAS AUTOQUEST", desc: "Car Rental Platform with location-based search, booking management, and secure online payments.", tags: ["MongoDB", "Express", "React", "Node.js"], img: "/123.jpg", github: "https://github.com/Imandividara/SIMAS-AUTOQUEST", live: "https://simas-demo.netlify.app", date: "May 2024 – Oct 2024", category: "Full-Stack" },
-  { title: "FoodieHub", desc: "Online Food Ordering Platform with Stripe payment integration and optimized React components.", tags: ["Spring Boot", "React", "Tailwind CSS", "MySQL", "Stripe"], img: "/game.jpg", github: "https://github.com/Imandividara/FoodieHub", live: "https://foodiehub-demo.netlify.app", date: "Jul 2024 – Jan 2025", category: "Full-Stack" },
+  { title: "ConstruxFlow", desc: "Supply Chain and Inventory Management System for procurement, supplier management, inventory tracking, and payment workflows. Achieved 25-30% gain in system responsiveness.", tags: ["React", "Spring Boot", "PostgreSQL", "REST APIs", "JPA"], img: "/2.png", github: "https://github.com/ConstruxFlow", live: "https://construxflow-demo.netlify.app", date: "May – Oct 2025", category: "Full-Stack" },
+  { title: "FutureFinder", desc: "Higher Education and Career Guidance Platform connecting students, institutions, and employers with Z-score analytics.", tags: ["PHP", "JavaScript", "HTML", "CSS", "MySQL"], img: "/3.png", github: "https://github.com/Imandividara/FutureFinder", live: "https://futurefinder-demo.netlify.app", date: "May 2024 – Apr 2025", category: "Full-Stack" },
+  { title: "SIMAS AUTOQUEST", desc: "Car Rental Platform with location-based search, booking management, and secure online payments.", tags: ["MongoDB", "Express", "React", "Node.js"], img: "/4.png", github: "https://github.com/Imandividara/Car-Rental-System", live: "https://simas-demo.netlify.app", date: "May 2024 – Oct 2024", category: "Full-Stack" },
+  { title: "FoodieHub", desc: "Online Food Ordering Platform with Stripe payment integration and optimized React components.", tags: ["Spring Boot", "React", "Tailwind CSS", "MySQL", "Stripe"], img: "/5.png", github: "https://github.com/Imandividara/FoodieHub", live: "https://foodiehub-demo.netlify.app", date: "Jul 2024 – Jan 2025", category: "Full-Stack" },
+  { title: "Maze Of Shadows", desc: "3D Horror Maze Game with immersive gameplay mechanics, enemy AI with chase systems, health management, and atmospheric sound design built in Unity.", tags: ["Unity", "C#", "Game Development", "3D Modeling", "AI Systems"], img: "/6.png", github: "https://github.com/Imandividara/Maze-Of-Shadows", live: "https://foodiehub-demo.netlify.app", date: "May – Sep 2025", category: "Game Development" },
+  { title: "Travel Treasures", desc: "Tourism Landing Page featuring dynamic greeting messages, time-based content, beautiful destination showcases with responsive design and modern UI/UX.", tags: ["React", "JavaScript", "CSS", "Responsive Design"], img: "/7.png", github: "https://github.com/Imandividara/Maze-Of-Shadows", live: "https://foodiehub-demo.netlify.app", date: "May – Jun 2024", category: "Frontend" },
 ];
 
 const certificates = [
@@ -41,10 +43,10 @@ const stats = [
 ];
 
 const achievements = [
-  "🏆 Winner - SLIIT Codefest Designathon 2025 (IFS)",
-  "🎯 Top 50 - INTERFACE X Designathon 2025 (Asta)",
-  "💡 Participant - IntelliHack 5.0 (UCSC)",
-  "🎵 First Runner-Up - All Island Inter-School Western Music Competition",
+  "Winner - SLIIT Codefest Designathon 2025 (IFS)",
+  "Top 50 - INTERFACE X Designathon 2025 (Asta)",
+  "Participant - IntelliHack 5.0 (UCSC)",
+  "First Runner-Up - All Island Inter-School Western Music Competition",
 ];
 
 // ============ COMPONENTS ============
@@ -213,7 +215,7 @@ const Home = () => {
       {/* PAGE 1 - CREATIVE UNIVERSE */}
       <AnimatePresence>
         {currentPage === 1 && (
-          <motion.section className="fixed inset-0 flex flex-col items-center justify-center px-4 pt-20 z-20"
+          <motion.section className="fixed inset-0 flex flex-col items-center justify-center px-4 pt-5 z-20"
             initial={{ x: 0, opacity: 1 }} exit={{ x: '-100%', opacity: 0 }} transition={{ duration: 0.6 }}>
             <div className="text-center space-y-8">
               <motion.div className="flex justify-center gap-8 mb-12" initial={{ y: -50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }}>
@@ -231,9 +233,9 @@ const Home = () => {
               </motion.div>
 
               <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }}>
-                <h1 className="text-5xl md:text-7xl font-bold mb-4">
+                <h1 className="text-5xl md:text-6xl font-bold mb-4">
                   <span className="text-white">Discover My Creative</span><br />
-                  <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent text-6xl md:text-8xl">Universe</span>
+                  <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent text-6xl md:text-7xl">Universe</span>
                 </h1>
               </motion.div>
 
@@ -456,9 +458,9 @@ const Home = () => {
                             <motion.a href={project.github} target="_blank" className="bg-white/10 border border-white/20 text-white p-3 rounded-full hover:bg-white hover:text-black transition" whileHover={{ scale: 1.2, rotate: 360 }}>
                               <FaGithub className="text-2xl" />
                             </motion.a>
-                            <motion.a href={project.live} target="_blank" className="bg-white/10 border border-white/20 text-white p-3 rounded-full hover:bg-white hover:text-black transition" whileHover={{ scale: 1.2, rotate: -360 }}>
+                            {/* <motion.a href={project.live} target="_blank" className="bg-white/10 border border-white/20 text-white p-3 rounded-full hover:bg-white hover:text-black transition" whileHover={{ scale: 1.2, rotate: -360 }}>
                               <FaExternalLinkAlt className="text-2xl" />
-                            </motion.a>
+                            </motion.a> */}
                           </div>
                         </div>
 
